@@ -1,6 +1,6 @@
 # portfolio siri
 
-#folder structure
+# folder structure
     Resources  -> Images 
     index.html
     JavaScript -> All javaScript files
