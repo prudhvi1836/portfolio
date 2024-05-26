@@ -1,9 +1,24 @@
-h1{
-    text-align: center;
+body{
+    margin: 0;
 }
-#header{
+header {
+    /* background-color: #f0f0f0; 
+    background-color: #f8e8e8;  */
+    background:linear-gradient(to right, #ffffff, #e0e0e0); 
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* h1{
+    text-align: center;
+} */
+#header-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    max-width: 880px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 #list-parent{
     display: flex;
@@ -12,4 +27,39 @@ h1{
 }
 li{
     width: 5em;
+    padding-top: 0.6em;
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+.role-description{
+    font-size: 1rem;
+}
+.user-name{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+.user-and-description{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 40rem
+}
+img{
+    width:4rem;
+    height: 4rem;
+    border-radius: 2rem;
+}
+.profile-img{
+    padding: 0.2rem;
+}
+
+
+.contact-links{
+ /* margin-left: 20rem; */
+ width: 20rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
