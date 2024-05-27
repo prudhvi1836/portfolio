@@ -1,25 +1,29 @@
 body{
     margin: 0;
+    overflow-x: hidden;
 }
-header {
+html{
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+#header {
     /* background-color: #f0f0f0; 
     background-color: #f8e8e8;  */
     background:linear-gradient(to right, #ffffff, #e0e0e0); 
     color: black;
     font-family: 'Roboto', sans-serif;
-}
+}  
 
-/* h1{
-    text-align: center;
-} */
+
 #header-container{
     display: flex;
-    justify-content: center;
-    max-width: 880px;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     padding: 0 1rem;
 }
+
 #list-parent{
     display: flex;
     list-style: none;
@@ -41,15 +45,21 @@ a{
     font-size: 1.5rem;
     font-weight:bold;
 }
-.user-and-description{
-    margin-left: 20px;
-    margin-top: 10px;
-    width: 40rem
+
+.user-and-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:5rem;
+    margin-left: 1.25rem;
+    margin-top: 0.625rem;
+    width: 40rem;
 }
 img{
     width:4rem;
     height: 4rem;
     border-radius: 2rem;
+    padding: 0.3rem;
 }
 .profile-img{
     padding: 0.2rem;
@@ -58,8 +68,27 @@ img{
 
 .contact-links{
  /* margin-left: 20rem; */
- width: 20rem;
- display: flex;
+ width: 22rem;
+ /* display: flex;
  justify-content: center;
- align-items: center;
+ align-items: center; */
 }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+
+  
+    #header-container{   
+      /* display: flex; */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .contact-links{
+      padding-left: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+    }
+  }
