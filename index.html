@@ -7,22 +7,41 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <header id="header">
-        <div id="header-container">
-            <div class="user-and-description">
-                <img src="./Resources/sirisha.jpeg" alt=":">
-                <div>
-                    <div class="user-name">Sirisha Gopireddy</div>
-                    <div class="role-description">Pricing Analyst at Direct Line Group</div>
-                </div>
-            </div>
-            <div class="contact-links">
-                <a href="./Html/posts.html" target="_blank">All Posts</a>
-                <a href="./Html/about.html" target="_blank">About</a>
-                <a href="./Html/contact.html" target="_blank">Contact</a>
+    <div id="content-box">
+        <div class="user-and-description">
+            <img src="./Resources/sirisha.jpeg" alt=":">
+            <div>
+                <div class="user-name">Sirisha Gopireddy</div>
+                <div class="role-description">Pricing Analyst at Direct Line Group</div>
             </div>
         </div>
-                
-    </header>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sirisha-gopireddy/" target="_blank"><img class="social-logo" src="./Resources/linkedin.png" alt=""></a>
+            <a href="mailto:sirishareddy.grr@gmail.com" target="_blank"><img class="social-logo" src="./Resources/gmail.png" alt=""></a>
+            <a href="https://github.com/yourprofile" target="_blank"><img class="social-logo" src="./Resources/github.png" alt=""></a>
+        </div>
+        <div class="separator"></div>
+        <div class="tabs">
+            <button onclick="toggleContent('about')">About</button>
+            <button onclick="toggleContent('blog')">Blog</button>
+            <button onclick="toggleContent('contact')">Contact</button>
+        </div>
+        <div id="about" class="content">
+            <h2>About Content</h2>
+            <p>This is the content for the About section.</p>
+          </div>
+        
+          <div id="blog" class="content" style="display: none;">
+            <h2>Blog Content</h2>
+            <p>This is the content for the Blog section.</p>
+          </div>
+        
+          <div id="contact" class="content" style="display: none;">
+            <h2>Contact Content</h2>
+            <p>This is the content for the Contact section.</p>
+          </div>
+    </div>
+<!-- Link to the external JavaScript file -->
+  <script src="./javaScript/scripts.js"></script>
 </body>
 </html>
