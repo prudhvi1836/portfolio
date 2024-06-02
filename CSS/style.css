@@ -1,6 +1,9 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    background-color: #EBEBEB;
+    font-family: 'Georgia', serif;
+
 }
 html{
     overflow-x: hidden;
@@ -8,87 +11,84 @@ html{
 *{
     box-sizing: border-box;
 }
-#header {
-    /* background-color: #f0f0f0; 
-    background-color: #f8e8e8;  */
-    background:linear-gradient(to right, #ffffff, #e0e0e0); 
-    color: black;
-    font-family: 'Roboto', sans-serif;
-}  
-
-
-#header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
+#content-box{
+    height: 40rem;
+    width: 80rem;
+    background-color:#FFFFFF ;
+    position: absolute;
+    left:50%;
+    top:5%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-#list-parent{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-li{
-    width: 5em;
-    padding-top: 0.6em;
-}
-a{
-    text-decoration: none;
-    color: black;
-    padding: 1rem;
-}
-.role-description{
-    font-size: 1rem;
-}
-.user-name{
-    font-size: 1.5rem;
-    font-weight:bold;
-}
-
 .user-and-description {
+    position: relative;
+    left:2rem;
+    top:2rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    width:5rem;
-    margin-left: 1.25rem;
-    margin-top: 0.625rem;
     width: 40rem;
 }
+
 img{
     width:4rem;
     height: 4rem;
     border-radius: 2rem;
     padding: 0.3rem;
 }
-.profile-img{
-    padding: 0.2rem;
+.user-name{
+    font-family: 'Georgia', serif;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-
-
-.contact-links{
- /* margin-left: 20rem; */
- width: 22rem;
- /* display: flex;
- justify-content: center;
- align-items: center; */
+.role-description{
+    color: rgba(0, 0, 0, 0.5);
 }
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-
-  
-    #header-container{   
-      /* display: flex; */
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-    .contact-links{
-      padding-left: 3rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-
-    }
+.social-links {
+    position: relative;
+    top: 51px;
+    left: 5.1rem;
+}
+.social-logo{
+    width:2.8rem;
+    height:2.8rem;
+    border-radius: 1rem;
+}
+.separator {
+    width: 100%;
+    height: 0.125rem; /* Adjust thickness here */
+    background-color: #cccccc; /* Gray color */
+    margin: 3rem 0; /* Adjust spacing here */
   }
+button{
+    padding: 0.6rem;
+    border-radius: .5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ffffff; /* Initial border color same as background */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition here */
+}
+.tabs{
+    display: flex;
+    width: 22.5rem ;
+    justify-content: center;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #272727;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight:normal;
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.3);
+    /* transform: scale(1.05); Slightly enlarge the button on hover */
+
+}
+.content{
+    padding-left: 5.5rem;
+}
+
