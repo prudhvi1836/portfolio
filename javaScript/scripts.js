@@ -12,5 +12,5 @@ document.querySelectorAll('input[name="tab"]').forEach((radio) => {
   });
 });
 
-// Initialize the display
+// Initialize the display with About as default 
 document.querySelector('input[name="tab"]:checked').dispatchEvent(new Event('change'));
