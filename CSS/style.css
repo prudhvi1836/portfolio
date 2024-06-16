@@ -62,17 +62,8 @@ img{
     height: 0.125rem; /* Adjust thickness here */
     background-color: #cccccc; /* Gray color */
     margin: 3rem 0; /* Adjust spacing here */
+    margin-bottom: 30px;
   }
-button{
-    padding: 0.6rem;
-    border-radius: .5rem;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #ffffff;
-    border: 1px solid #ffffff; /* Initial border color same as background */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition here */
-}
 .tabs{
     display: flex;
     width: 22.5rem ;
@@ -89,6 +80,38 @@ button:hover{
 
 }
 .content{
-    padding-left: 5.5rem;
+    padding-left: 5.8rem;
 }
+
+.tab-container {
+    display: flex;
+    element.style {
+    padding-left: 5.4rem;
+    padding-bottom: 1.25rem;
+    }
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    margin: 5px;
+    padding: 0.6rem;
+    border-radius: .5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #ffffff; /* Initial border color same as background */
+    transition: background-color 0.3s, color 0.3s;
+
+  }
+input[type="radio"]:checked + label {
+    background-color: #272727;
+    color: #FFFFFF;
+}
+label:hover {
+    background-color: #272727;
+    color: #FFFFFF;
+  }
 

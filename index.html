@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="content-box">
+        <!-- Profile Picture and Role -->
         <div class="user-and-description">
             <img src="./Resources/sirisha.jpeg" alt=":">
             <div>
@@ -15,30 +16,36 @@
                 <div class="role-description">Pricing Analyst at Direct Line Group</div>
             </div>
         </div>
+        <!-- Social Links -->
         <div class="social-links">
             <a href="https://www.linkedin.com/in/sirisha-gopireddy/" target="_blank"><img class="social-logo" src="./Resources/linkedin.png" alt=""></a>
             <a href="mailto:sirishareddy.grr@gmail.com" target="_blank"><img class="social-logo" src="./Resources/gmail.png" alt=""></a>
             <a href="https://github.com/yourprofile" target="_blank"><img class="social-logo" src="./Resources/github.png" alt=""></a>
         </div>
+        <!-- Grey separator -->
         <div class="separator"></div>
-        <div class="tabs">
-            <button onclick="toggleContent('about')">About</button>
-            <button onclick="toggleContent('blog')">Blog</button>
-            <button onclick="toggleContent('contact')">Contact</button>
+        <!-- Radio-Buttons/Tabs -->
+        <div class="tab-container">
+          <input type="radio" id="about" name="tab" checked>
+          <label for="about">About</label>
+          
+          <input type="radio" id="blog" name="tab">
+          <label for="blog">Blog</label>
+          
+          <input type="radio" id="contact" name="tab">
+          <label for="contact">Contact</label>
         </div>
-        <div id="about" class="content">
-            <h2>About Content</h2>
-            <p>This is the content for the About section.</p>
-          </div>
-        
-          <div id="blog" class="content" style="display: none;">
-            <h2>Blog Content</h2>
-            <p>This is the content for the Blog section.</p>
-          </div>
-        
-          <div id="contact" class="content" style="display: none;">
-            <h2>Contact Content</h2>
-            <p>This is the content for the Contact section.</p>
+        <!-- Content of tabs -->
+          <div class="tab-content">
+            <div id="about-content" class="content">
+              About content goes here.
+            </div>
+            <div id="blog-content" class="content">
+              Blog content goes here.
+            </div>
+            <div id="contact-content" class="content">
+              Contact content goes here.
+            </div>
           </div>
     </div>
 <!-- Link to the external JavaScript file -->
