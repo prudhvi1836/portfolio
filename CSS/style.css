@@ -64,31 +64,15 @@ img{
     margin: 3rem 0; /* Adjust spacing here */
     margin-bottom: 30px;
   }
-.tabs{
-    display: flex;
-    width: 22.5rem ;
-    justify-content: center;
-}
-button:hover{
-    cursor: pointer;
-    background-color: #272727;
-    color: #FFFFFF;
-    font-size: 1rem;
-    font-weight:normal;
-    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.3);
-    /* transform: scale(1.05); Slightly enlarge the button on hover */
 
-}
 .content{
     padding-left: 5.8rem;
 }
 
 .tab-container {
     display: flex;
-    element.style {
     padding-left: 5.4rem;
     padding-bottom: 1.25rem;
-    }
 }
 input[type="radio"] {
     display: none;
