@@ -1,13 +1,16 @@
 function redirectToPage(page) {
     window.location.href = page;
 }
-function toggleContent(contentId) {
-    var contentElements = document.querySelectorAll('.content');
-    contentElements.forEach((element)=>{
-      if (element.id === contentId) {
-        element.style.display = 'block';
-      } else {
-        element.style.display = 'none';
-      }
+
+// function to display contents as per tab selection
+document.querySelectorAll('input[name="tab"]').forEach((radio) => {
+  radio.addEventListener('change', function() {
+    document.querySelectorAll('.tab-content > div').forEach((content) => {
+      content.style.display = 'none';
     });
-}
+    document.getElementById(`${this.id}-content`).style.display = 'block';
+  });
+});
+
+// Initialize the display
+document.querySelector('input[name="tab"]:checked').dispatchEvent(new Event('change'));
