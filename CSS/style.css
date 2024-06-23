@@ -97,5 +97,59 @@ input[type="radio"]:checked + label {
 label:hover {
     background-color: #272727;
     color: #FFFFFF;
-  }
+}
+.about-content-container{
+    display: flex;
+    justify-content: space-around;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+.list-item{
+    padding: 1.5rem;
+    padding-left: 0;
+}
+.experience-section{
+    padding:0;
+    border-left: 3px solid #cccccc;
+    margin-left: 1.5rem;
+}
+.circle{
+    display:inline-block;
+    background-color: #cccccc;
+    width: .75rem;
+    height: .75rem;
+    transform: translateX(-58%);
+    border-radius: 0.5rem;
+}
+.circle-present{
+    display:inline-block;
+    background-color: #272727;
+    width: .75rem;
+    height: .75rem;
+    transform: translateX(-58%);
+    border-radius: 0.5rem;
+}
+.circle-gap-filler{
+    display:inline-block;
+    width: 1rem;
+}
+.company-name{
+    color: rgba(0, 0, 0, 0.5);
+}
+.about-section{
+    width: 30rem;
+}
+p{
+    line-height: 1.5;
+}
+
+.experience-header {
+    position: absolute;
+    top: 15.125rem;
+    left: 52.1875rem;
+}
 
