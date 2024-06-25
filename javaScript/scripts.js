@@ -1,7 +1,3 @@
-function redirectToPage(page) {
-    window.location.href = page;
-}
-
 // function to display contents as per tab selection
 document.querySelectorAll('input[name="tab"]').forEach((radio) => {
   radio.addEventListener('change', function() {
