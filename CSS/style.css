@@ -153,3 +153,49 @@ p{
     left: 60.1875rem;
 }
 
+/* blog styles */
+
+.blog-preview {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-preview h4 {
+    margin: 0 0 10px;
+}
+
+.blog-preview p {
+    margin: 0 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+.blog-preview button {
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.blog-preview button:hover {
+    background-color: #272727;
+}
+
+#blog-preview-container{
+    width:70rem;
+    height:20rem;
+    overflow: auto;
+}
+
+.back-button{
+    background-color: #272727;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
